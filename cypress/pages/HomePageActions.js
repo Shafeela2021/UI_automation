@@ -1,5 +1,7 @@
+import BasePage from './BasePage'
+
 var elements 
-class HomePageActions {
+class HomePageActions extends BasePage{
 
     launchWebPage(url)
      {
@@ -10,15 +12,9 @@ class HomePageActions {
             elements = require('./Yahoo/HomePage/elements')
         }
 
-       return cy.visit(url)
+       return this.open(url)
     }
-    
-    validateTitle(pageTitle) {
-        cy.log(pageTitle)
-        cy.log("url",cy.url())
-        return cy.title().should('eq', pageTitle)
-     }
- 
+
     clickSearchTxtBox(){
         return cy.get(elements.HOMEPAGE.SEARCH_TXTBOX).click()
     }

@@ -13,7 +13,6 @@ describe('searchTest suite', ()=>{
           })
     })
 
-
     it('Validate Google search return expected result',()=>{
         //Check if fixture data is loaded successfully
         expect(input).to.not.be.undefined;

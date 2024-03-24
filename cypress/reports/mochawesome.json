@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2024-03-24T05:06:46.978Z",
-    "end": "2024-03-24T05:06:56.051Z",
-    "duration": 9073,
+    "start": "2024-03-24T21:24:47.474Z",
+    "end": "2024-03-24T21:24:52.666Z",
+    "duration": 5192,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "51cdb673-a558-44de-8598-4bb2402d4a5a",
+      "uuid": "2ebdf383-57c0-4911-a7c7-efddf5e2c64f",
       "title": "",
       "fullFile": "cypress/e2e/googleSearchTest.cy.js",
       "file": "cypress/e2e/googleSearchTest.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "3712e5b7-9543-483d-a7f2-08749eae0f99",
+          "uuid": "b0a09640-3bfc-4efa-b6a9-1bd23aa6e024",
           "title": "searchTest suite",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Validate Google search return expected result",
               "fullTitle": "searchTest suite Validate Google search return expected result",
               "timedOut": null,
-              "duration": 4965,
+              "duration": 3260,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "//Check if fixture data is loaded successfully\nexpect(input).to.not.be.undefined;\nhomePage.launchWebPage(input.url);\nhomePage.validateTitle(input.title);\nhomePage.clickSearchTxtBox();\nhomePage.enterSearchQuery(input.query);\nhomePage.submitSearchQuery();\nresultPage.verifyFirstSearchResult(input.query);",
               "err": {},
-              "uuid": "d9aa8dbb-73e8-432d-b2c2-6380f22b1a0d",
-              "parentUUID": "3712e5b7-9543-483d-a7f2-08749eae0f99",
+              "uuid": "bc934e67-26ca-4c9f-a8ac-7de1adf192a6",
+              "parentUUID": "b0a09640-3bfc-4efa-b6a9-1bd23aa6e024",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "d9aa8dbb-73e8-432d-b2c2-6380f22b1a0d"
+            "bc934e67-26ca-4c9f-a8ac-7de1adf192a6"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 4965,
+          "duration": 3260,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

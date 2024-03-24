@@ -1,10 +1,10 @@
+import BasePage from './BasePage'
 var elements
 
-class ResultPageActions {
+class ResultPageActions extends BasePage{
     getElementPath(){ 
         return cy.title().then((txt)=>{
             if(txt.includes('Google')){
-                cy.log(txt)
                 elements = require('./Google/ResultPage/elements')
             }
             else{

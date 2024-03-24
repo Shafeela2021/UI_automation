@@ -6,6 +6,7 @@
   "scripts": {
     "test": "npx cypress run",
     "headTest": "npm run test -- --headed",
+    "headLess": "npm run test -- --headless",
     "cloudRecordTest": "npm run test -- --record --key  ff320487-6ca5-4eaa-9b64-49db53a43e2c",
     "testHeadless": "npm run test -- --reporter mocahawesome",
     "testChrome": "npm run test -- --browser chrome --headed --reporter mocahawesome",

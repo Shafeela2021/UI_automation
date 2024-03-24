@@ -14,10 +14,17 @@ Features :
 5. Integerated MochaAwesome report
 6. Support for Cypress Cloud (Dashboard)
 7. Test Retries for failing tests
-8. Ability to run in multiple browser  ( chrome, firefox)
+8. Ability to run in multiple browser (chrome, firefox)
+9. Ability to run in docker container using dockerfile for testing in multiple browser version 
+    Steps to run :
+    export PATH="$PATH:/Applications/Docker.app/Contents/Resources/bin/"
+     To build the image : "docker build -t cypress-image ."
+     To run the image in container : "docker run -it cypress-image"
+10. Usage of OOP Inheritance to extend all the pages from BasePage  - which      allow  to use common function to open the url and validate the title
+(Call the cy.visit() from BasePage with specified path)
 
-Usage of OOP Inheritance to extend all the pages from BasePage
-Allows to load header and footer components from BasePage constructor
-Call the cy.visit() from BasePage with specified path
-Test Retries for failing tests
+
+
+
+
 
