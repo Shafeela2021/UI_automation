@@ -1,0 +1,107 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-03-24T05:06:46.978Z",
+    "end": "2024-03-24T05:06:56.051Z",
+    "duration": 9073,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "51cdb673-a558-44de-8598-4bb2402d4a5a",
+      "title": "",
+      "fullFile": "cypress/e2e/googleSearchTest.cy.js",
+      "file": "cypress/e2e/googleSearchTest.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "3712e5b7-9543-483d-a7f2-08749eae0f99",
+          "title": "searchTest suite",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Validate Google search return expected result",
+              "fullTitle": "searchTest suite Validate Google search return expected result",
+              "timedOut": null,
+              "duration": 4965,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//Check if fixture data is loaded successfully\nexpect(input).to.not.be.undefined;\nhomePage.launchWebPage(input.url);\nhomePage.validateTitle(input.title);\nhomePage.clickSearchTxtBox();\nhomePage.enterSearchQuery(input.query);\nhomePage.submitSearchQuery();\nresultPage.verifyFirstSearchResult(input.query);",
+              "err": {},
+              "uuid": "d9aa8dbb-73e8-432d-b2c2-6380f22b1a0d",
+              "parentUUID": "3712e5b7-9543-483d-a7f2-08749eae0f99",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "d9aa8dbb-73e8-432d-b2c2-6380f22b1a0d"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 4965,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "reportFileName": "report",
+        "overWrite": true,
+        "html": true,
+        "json": true,
+        "charts": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

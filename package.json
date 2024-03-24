@@ -1,0 +1,22 @@
+{
+  "name": "cypress_automation_framework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress run",
+    "headTest": "npm run test -- --headed",
+    "cloudRecordTest": "npm run test -- --record --key  ff320487-6ca5-4eaa-9b64-49db53a43e2c",
+    "testHeadless": "npm run test -- --reporter mocahawesome",
+    "testChrome": "npm run test -- --browser chrome --headed --reporter mocahawesome",
+    "testFirefox": "npm run test -- --browser firefox --headed --reporter mocahawesome"
+
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.7.1",
+    "cypress-mochawesome-reporter": "^3.8.2"
+  }
+}

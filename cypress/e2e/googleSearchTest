@@ -1,0 +1,47 @@
+///<reference types="cypress"/>
+import HomePageActions from "../pages/HomePageActions"
+import ResultPageActions from "../pages/ResultPageActions"
+
+const homePage = new HomePageActions()
+const resultPage = new ResultPageActions()
+
+describe('searchTest suite', ()=>{
+    let input
+    beforeEach(()=> {
+        cy.fixture('example').then((data) => {
+            input=data
+          })
+    })
+      // Check if fixture data is loaded successfully
+    it('Fixture data should be loaded', () => {
+        expect(input).to.not.be.undefined;
+    });
+
+    it('Validate Google search return expected result',()=>{
+
+        input.forEach((data)=>{
+            homePage.launchWebPage(data.url)
+            homePage.validateTitle(data.title)
+            homePage.clickSearchTxtBox()
+            homePage.enterSearchQuery(data.query)
+            homePage.submitSearchQuery()
+            resultPage.verifyFirstSearchResult(data.query) 
+        })
+
+        // input.array.forEach(data => {
+        //     homePage.launchWebPage(data.url)
+        // homePage.validateTitle(data.title)
+        // homePage.clickSearchTxtBox()
+        // homePage.enterSearchQuery(data.query)
+        // homePage.submitSearchQuery()
+        // resultPage.verifyFirstSearchResult(data.query) 
+        // });
+        // homePage.launchWebPage(input.url)
+        // homePage.validateTitle(input.title)
+        // homePage.clickSearchTxtBox()
+        // homePage.enterSearchQuery(input.query)
+        // homePage.submitSearchQuery()
+        // resultPage.verifyFirstSearchResult(input.query)   
+    })
+    
+})
