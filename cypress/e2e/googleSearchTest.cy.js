@@ -21,7 +21,7 @@ describe('searchTest suite', ()=>{
         homePage.clickSearchTxtBox()
         homePage.enterSearchQuery(input.query)
         homePage.submitSearchQuery()
-        resultPage.verifyFirstSearchResult('test')   
+        resultPage.verifyFirstSearchResult(input.query)   
     })
     
 })
