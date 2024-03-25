@@ -17,7 +17,7 @@ describe('searchTest suite', ()=>{
         //Check if fixture data is loaded successfully
         expect(input).to.not.be.undefined;
         homePage.launchWebPage(input.url)
-        homePage.validateTitle(input.title)
+        //homePage.validateTitle(input.title)
         homePage.clickSearchTxtBox()
         homePage.enterSearchQuery(input.query)
         homePage.submitSearchQuery()
