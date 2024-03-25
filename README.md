@@ -22,6 +22,7 @@ Features :
      To run the image in container : "docker run -it cypress-image"
 10. Usage of OOP Inheritance to extend all the pages from BasePage  - which      allow  to use common function to open the url and validate the title
 (Call the cy.visit() from BasePage with specified path)
+11. Integerated in CI/CD pipeline using github workflow - Whenever new code is pushed to master test will be triggered
 
 
 
