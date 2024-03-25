@@ -15,7 +15,7 @@ Features :
 6. Support for Cypress Cloud (Dashboard)
 7. Test Retries for failing tests
 8. Ability to run in multiple browser (chrome, firefox)
-9. Ability to run in docker container using dockerfile for testing in multiple browser version 
+9. Ability to run in docker container using dockerfile for testing in different browser version 
     Steps to run :
     export PATH="$PATH:/Applications/Docker.app/Contents/Resources/bin/"
      To build the image : "docker build -t cypress-image ."
